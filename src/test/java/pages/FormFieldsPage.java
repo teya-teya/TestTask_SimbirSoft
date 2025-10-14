@@ -64,7 +64,7 @@ public class FormFieldsPage {
         return this;
     }
 
-    @Step("Выбираем напиток '{drink}'")
+    @Step("Выбираем напиток '{drink}' из списка 'What is your favorite drink?'")
     public FormFieldsPage selectDrink(String drink) {
         WaitHelper.waitForElementsVisible(wait, cbxsDrinks);
 
@@ -77,7 +77,7 @@ public class FormFieldsPage {
         return this;
     }
 
-    @Step("Выбираем цвет '{color}'")
+    @Step("Выбираем цвет '{color}' из списка 'What is your favorite color?'")
     public FormFieldsPage selectColor(String color) {
         WaitHelper.waitForElementsVisible(wait, radioBtnsColors);
 
